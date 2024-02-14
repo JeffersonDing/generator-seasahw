@@ -1,0 +1,108 @@
+\documentclass{article}
+\usepackage[letterpaper,top=0.25in,bottom=0.15in,left=0.5in,right=0.5in,includeheadfoot]{geometry}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{tabu}
+\usepackage{enumerate}
+\usepackage{graphicx, textcomp}
+\usepackage{xcolor}
+\usepackage{scrextend}
+\usepackage{xspace}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{framed}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%COURSE INFORMATION%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\MyID}{PENNIDENTRY}
+\newcommand{\CollaboratorNames}{COLLABORATORSENTRY}
+\newcommand{\HomeworkNo}{XXENTRY}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%CUSTOM COMMANDS%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\lhs}{\mathrm{LHS}}
+\newcommand{\rhs}{\mathrm{RHS}}
+\newcommand{\powerset}{\mathcal{P}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}\xspace}
+\newcommand{\R}{\ensuremath{\mathbb{R}}\xspace}
+\newcommand{\N}{\ensuremath{\mathbb{N}}\xspace}
+\newcommand{\C}{\ensuremath{\mathbb{C}}\xspace}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}\xspace}
+\newcommand{\E}{\ensuremath{\mathbb{E}}}
+\newcommand{\V}{\ensuremath{\mathbb{V}}}
+\newcommand{\st}{\mkern9mu \mathrm{s.t.} \mkern9mu}
+\righthyphenmin=62
+\lefthyphenmin=62
+\newcommand{\floor}[1]{\ensuremath{\left\lfloor #1 \right\rfloor}\xspace}
+\newcommand{\ceil}[1]{\ensuremath{\left\lceil #1 \right\rceil}\xspace}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%DOCUMENT SETUP%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand\qedsymbol{$\blacksquare$}
+\theoremstyle{remark}
+\newtheorem*{lemma}{Lemma}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\multichoose}[2]{\left(\!\genfrac{(}{)}{0pt}{}{#1}{#2}\!\right)}
+\renewcommand{\baselinestretch}{1.3}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot[L]{\MyID{}}
+\fancyfoot[R]{Homework \HomeworkNo{}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\frac}[2]{\dfrac{#1}{#2}}
+\setlength{\headheight}{0pt}
+% DO NOT MODIFY ANYTHING HERE
+\fancypagestyle{firstpage}{
+  \fancyhead{}
+  \fancyfoot{}
+}
+% DO NOT MODIFY ANYTHING HERE
+\newcommand{\MyIDCheck}[1]
+{\ifnum\pdfstrcmp{#1}{Your 8 digit ID}=0
+   \LARGE\textcolor{red}{#1}
+\else
+   #1
+\fi}
+% DO NOT MODIFY ANYTHING HERE
+\newcommand{\MyHomeworkNoCheck}[1]{\ifnum\pdfstrcmp{#1}{XX}=0
+   \huge\textcolor{red}{#1}
+\else
+   #1
+\fi}
+% DO NOT MODIFY ANYTHING HERE
+\newcommand{\MyCollaboratorCheck}[1]{\ifnum\pdfstrcmp{#1}{ADD COLLABORATORS HERE}=0
+   \LARGE\textcolor{red}{#1}
+\else
+   #1
+\fi}
+% DO NOT MODIFY ANYTHING HERE
+\newcommand{\PrintFirstHeader}{
+  COURSEENTRY \vspace{5pt} \hfill {\Large\MyIDCheck{\MyID}}
+  \\
+  {\LARGE{\textbf{Homework \MyHomeworkNoCheck{\HomeworkNo}}}}
+  \\
+  {\large Collaborators: \MyCollaboratorCheck{\CollaboratorNames}}
+  \\
+  \rule{\textwidth}{0.4pt}
+}
+\begin{document}
+\thispagestyle{firstpage}
+\PrintFirstHeader{}
+%
+%
+%
+%
+\begin{enumerate}[\bf Q1.]
+  \setlength\itemsep{1em}
+    % Question 1
+    \item
+\end{enumerate}
+%
+%
+%
+\end{document}\\\\\\
